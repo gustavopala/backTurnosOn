@@ -13,6 +13,18 @@ const Turno = sequelize.define('Turno', {
     estado: {
         type: DataTypes.STRING(100),
     },
+    fecha: {
+        type: DataTypes.DATEONLY,
+        allowNull: false
+    },
+    hora: {
+        type: DataTypes.TIME,
+        allowNull: false
+    },
+    clienteId: {
+        type: DataTypes.UUID,
+        allowNull: false
+    }
 
 },{
     tableName: 'Turnos',
