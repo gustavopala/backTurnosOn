@@ -22,6 +22,10 @@ const Tramite = sequelize.define('Tramite', {
     },
     observacion: {
         type: DataTypes.STRING(1000)
+    },
+    casoId: {
+        type: DataTypes.UUID,
+        allowNull: false
     }
 },{
     tableName: 'Tramites',

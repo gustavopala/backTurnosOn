@@ -16,6 +16,10 @@ const Caso = sequelize.define('Caso', {
     },
     estado: {
         type: DataTypes.STRING(100),
+    },
+    clienteId: {
+        type: DataTypes.UUID,
+        allowNull: false
     }
 }, {
     tableName: 'Casos',
